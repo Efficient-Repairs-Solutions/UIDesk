@@ -1,23 +1,5 @@
-@theme inline {
-  --color-background: var(--ui-background);
-  --color-foreground: var(--ui-foreground);
-  --color-primary: var(--ui-primary);
-  --color-primary-foreground: var(--ui-primary-foreground);
-  --color-border: var(--ui-border);
-}
-
-:root {
-  --ui-background: #ffffff;
-  --ui-foreground: #0f172a;
-  --ui-primary: #0f172a;
-  --ui-primary-foreground: #ffffff;
-  --ui-border: #cbd5e1;
-}
-
-[data-theme="dark"] {
-  --ui-background: #0f172a;
-  --ui-foreground: #f8fafc;
-  --ui-primary: #f8fafc;
-  --ui-primary-foreground: #0f172a;
-  --ui-border: #475569;
-}
+@import "@fontsource-variable/manrope";
+@import "./colors.css";
+@import "./dimensions.css";
+@import "./typography.css";
+@import "./shadows.css";
