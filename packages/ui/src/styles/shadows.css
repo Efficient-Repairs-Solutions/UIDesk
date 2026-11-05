@@ -1,0 +1,158 @@
+:root {
+  --dui-shadow-subtle-1-layer-1: #10101008;
+  --dui-shadow-subtle-1-layer-2: #1010100a;
+  --dui-shadow-subtle-2-layer-1: #1010100d;
+  --dui-shadow-subtle-2-layer-2: #1010100f;
+  --dui-shadow-subtle-3-layer-1: #1010100a;
+  --dui-shadow-subtle-3-layer-2: #10101012;
+  --dui-shadow-soft-1-layer-1: #1010100d;
+  --dui-shadow-soft-1-layer-2: #10101014;
+  --dui-shadow-soft-2-layer-1: #1010100d;
+  --dui-shadow-soft-2-layer-2: #10101017;
+  --dui-shadow-soft-3-layer-1: #1010100f;
+  --dui-shadow-soft-3-layer-2: #10101017;
+  --dui-shadow-elevated-1-layer-1: #1010100f;
+  --dui-shadow-elevated-1-layer-2: #1010101a;
+  --dui-shadow-elevated-2-layer-1: #1010100f;
+  --dui-shadow-elevated-2-layer-2: #1010101c;
+  --dui-shadow-elevated-3-layer-1: #10101012;
+  --dui-shadow-elevated-3-layer-2: #1010101f;
+  --dui-shadow-floating-1-layer-1: #10101012;
+  --dui-shadow-floating-1-layer-2: #10101021;
+  --dui-shadow-floating-2-layer-1: #10101014;
+  --dui-shadow-floating-2-layer-2: #10101024;
+  --dui-shadow-floating-3-layer-1: #10101017;
+  --dui-shadow-floating-3-layer-2: #10101026;
+}
+
+[data-theme="dark"] {
+  --dui-shadow-subtle-1-layer-1: #00000014;
+  --dui-shadow-subtle-1-layer-2: #0000001f;
+  --dui-shadow-subtle-2-layer-1: #0000001a;
+  --dui-shadow-subtle-2-layer-2: #00000026;
+  --dui-shadow-subtle-3-layer-1: #0000001c;
+  --dui-shadow-subtle-3-layer-2: #0000002e;
+  --dui-shadow-soft-1-layer-1: #0000001f;
+  --dui-shadow-soft-1-layer-2: #00000033;
+  --dui-shadow-soft-2-layer-1: #00000021;
+  --dui-shadow-soft-2-layer-2: #00000038;
+  --dui-shadow-soft-3-layer-1: #00000029;
+  --dui-shadow-soft-3-layer-2: #00000040;
+  --dui-shadow-elevated-1-layer-1: #00000029;
+  --dui-shadow-elevated-1-layer-2: #00000047;
+  --dui-shadow-elevated-2-layer-1: #0000002e;
+  --dui-shadow-elevated-2-layer-2: #0000004f;
+  --dui-shadow-elevated-3-layer-1: #00000033;
+  --dui-shadow-elevated-3-layer-2: #00000057;
+  --dui-shadow-floating-1-layer-1: #00000038;
+  --dui-shadow-floating-1-layer-2: #00000061;
+  --dui-shadow-floating-2-layer-1: #0000003d;
+  --dui-shadow-floating-2-layer-2: #0000006b;
+  --dui-shadow-floating-3-layer-1: #00000045;
+  --dui-shadow-floating-3-layer-2: #00000075;
+}
+
+@theme inline {
+  --color-dui-shadow-subtle-1-layer-1: var(--dui-shadow-subtle-1-layer-1);
+  --color-dui-shadow-subtle-1-layer-2: var(--dui-shadow-subtle-1-layer-2);
+  --color-dui-shadow-subtle-2-layer-1: var(--dui-shadow-subtle-2-layer-1);
+  --color-dui-shadow-subtle-2-layer-2: var(--dui-shadow-subtle-2-layer-2);
+  --color-dui-shadow-subtle-3-layer-1: var(--dui-shadow-subtle-3-layer-1);
+  --color-dui-shadow-subtle-3-layer-2: var(--dui-shadow-subtle-3-layer-2);
+  --color-dui-shadow-soft-1-layer-1: var(--dui-shadow-soft-1-layer-1);
+  --color-dui-shadow-soft-1-layer-2: var(--dui-shadow-soft-1-layer-2);
+  --color-dui-shadow-soft-2-layer-1: var(--dui-shadow-soft-2-layer-1);
+  --color-dui-shadow-soft-2-layer-2: var(--dui-shadow-soft-2-layer-2);
+  --color-dui-shadow-soft-3-layer-1: var(--dui-shadow-soft-3-layer-1);
+  --color-dui-shadow-soft-3-layer-2: var(--dui-shadow-soft-3-layer-2);
+  --color-dui-shadow-elevated-1-layer-1: var(--dui-shadow-elevated-1-layer-1);
+  --color-dui-shadow-elevated-1-layer-2: var(--dui-shadow-elevated-1-layer-2);
+  --color-dui-shadow-elevated-2-layer-1: var(--dui-shadow-elevated-2-layer-1);
+  --color-dui-shadow-elevated-2-layer-2: var(--dui-shadow-elevated-2-layer-2);
+  --color-dui-shadow-elevated-3-layer-1: var(--dui-shadow-elevated-3-layer-1);
+  --color-dui-shadow-elevated-3-layer-2: var(--dui-shadow-elevated-3-layer-2);
+  --color-dui-shadow-floating-1-layer-1: var(--dui-shadow-floating-1-layer-1);
+  --color-dui-shadow-floating-1-layer-2: var(--dui-shadow-floating-1-layer-2);
+  --color-dui-shadow-floating-2-layer-1: var(--dui-shadow-floating-2-layer-1);
+  --color-dui-shadow-floating-2-layer-2: var(--dui-shadow-floating-2-layer-2);
+  --color-dui-shadow-floating-3-layer-1: var(--dui-shadow-floating-3-layer-1);
+  --color-dui-shadow-floating-3-layer-2: var(--dui-shadow-floating-3-layer-2);
+}
+
+@utility shadow-dui-subtle-1 {
+  box-shadow:
+    0px 0px 0.85px 0px var(--dui-shadow-subtle-1-layer-1),
+    0px 1px 1.7px 0px var(--dui-shadow-subtle-1-layer-2);
+}
+
+@utility shadow-dui-subtle-2 {
+  box-shadow:
+    0px 1px 0.85px 0px var(--dui-shadow-subtle-2-layer-1),
+    0px 1px 2.55px 0px var(--dui-shadow-subtle-2-layer-2);
+}
+
+@utility shadow-dui-subtle-3 {
+  box-shadow:
+    0px 1px 1.7px 0px var(--dui-shadow-subtle-3-layer-1),
+    0px 2px 3.4px 0px var(--dui-shadow-subtle-3-layer-2);
+}
+
+@utility shadow-dui-soft-1 {
+  box-shadow:
+    0px 1px 2.55px 0px var(--dui-shadow-soft-1-layer-1),
+    0px 3px 5.1px 0px var(--dui-shadow-soft-1-layer-2);
+}
+
+@utility shadow-dui-soft-2 {
+  box-shadow:
+    0px 2px 3.4px 0px var(--dui-shadow-soft-2-layer-1),
+    0px 4px 6.8px 0px var(--dui-shadow-soft-2-layer-2);
+}
+
+@utility shadow-dui-soft-3 {
+  box-shadow:
+    0px 2px 4.25px 0px var(--dui-shadow-soft-3-layer-1),
+    0px 6px 10.2px 0px var(--dui-shadow-soft-3-layer-2);
+}
+
+@utility shadow-dui-elevated-1 {
+  box-shadow:
+    0px 3px 5.1px 0px var(--dui-shadow-elevated-1-layer-1),
+    0px 8px 13.6px 0px var(--dui-shadow-elevated-1-layer-2);
+}
+
+@utility shadow-dui-elevated-2 {
+  box-shadow:
+    0px 4px 6.8px 0px var(--dui-shadow-elevated-2-layer-1),
+    0px 10px 17px 0px var(--dui-shadow-elevated-2-layer-2);
+}
+
+@utility shadow-dui-elevated-3 {
+  box-shadow:
+    0px 5px 8.5px 0px var(--dui-shadow-elevated-3-layer-1),
+    0px 12px 20.4px 0px var(--dui-shadow-elevated-3-layer-2);
+}
+
+@utility shadow-dui-elevated-4 {
+  box-shadow:
+    0px 6px 10.2px 0px var(--dui-shadow-floating-1-layer-1),
+    0px 16px 27.2px 0px var(--dui-shadow-floating-1-layer-2);
+}
+
+@utility shadow-dui-floating-1 {
+  box-shadow:
+    0px 6px 10.2px 0px var(--dui-shadow-floating-1-layer-1),
+    0px 16px 27.2px 0px var(--dui-shadow-floating-1-layer-2);
+}
+
+@utility shadow-dui-floating-2 {
+  box-shadow:
+    0px 8px 13.6px 0px var(--dui-shadow-floating-2-layer-1),
+    0px 20px 34px 0px var(--dui-shadow-floating-2-layer-2);
+}
+
+@utility shadow-dui-floating-3 {
+  box-shadow:
+    0px 10px 17px 0px var(--dui-shadow-floating-3-layer-1),
+    0px 24px 40.8px 0px var(--dui-shadow-floating-3-layer-2);
+}

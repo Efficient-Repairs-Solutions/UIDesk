@@ -5,7 +5,11 @@
   "scripts": {
     "dev": "storybook dev -p 6006",
     "build": "storybook build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:visual": "pnpm build && playwright test",
+    "test:visual:update": "pnpm build && playwright test --update-snapshots"
   },
   "dependencies": {
     "@uidesk/ui": "workspace:*",
@@ -13,13 +17,18 @@
     "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.1",
     "@storybook/addon-a11y": "^10.6.5",
     "@storybook/addon-docs": "^10.6.5",
+    "@storybook/addon-vitest": "^10.6.5",
     "@storybook/react-vite": "^10.6.5",
     "@tailwindcss/postcss": "^4.3.4",
+    "@vitest/browser-playwright": "^5.1.0",
+    "playwright": "^1.64.1",
     "postcss": "^8.5.32",
     "storybook": "^10.6.5",
     "tailwindcss": "^4.3.4",
-    "vite": "^8.3.5"
+    "vite": "^8.3.5",
+    "vitest": "^5.1.0"
   }
 }

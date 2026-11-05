@@ -12,7 +12,9 @@
     "typecheck": "pnpm -r --if-present typecheck",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format:check": "prettier --check .",
+    "test": "pnpm --filter @uidesk/storybook test",
+    "test:visual": "pnpm --filter @uidesk/storybook test:visual"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

@@ -1,0 +1,627 @@
+:root {
+  --dui-basic-background: #ffffff;
+  --dui-basic-foreground: #171717;
+  --dui-basic-inverse-foreground: #ffffff;
+  --dui-basic-inverse-surface: #252525;
+  --dui-basic-link: #00655d;
+  --dui-basic-link-hover: #214f4a;
+  --dui-basic-link-visited: #66518b;
+  --dui-basic-focus-ring: #242424;
+  --dui-basic-focus-ring-offset: #ffffff;
+  --dui-basic-selection-bg: #e9f5f2;
+  --dui-basic-selection-border: #377a71;
+  --dui-brand-primary: #087c71;
+  --dui-brand-primary-hover: #076b62;
+  --dui-brand-primary-press: #05564e;
+  --dui-brand-primary-text: #00655d;
+  --dui-brand-primary-fg: #f0fffc;
+  --dui-brand-primary-bg: #e6f5f2;
+  --dui-brand-secondary: #b9caa1;
+  --dui-brand-secondary-hover: #a6ba89;
+  --dui-brand-secondary-press: #91a774;
+  --dui-brand-secondary-text: #51623e;
+  --dui-brand-secondary-fg: #20301a;
+  --dui-brand-secondary-bg: #f1f5ec;
+  --dui-brand-accent: #d58d49;
+  --dui-brand-accent-hover: #ca7f3c;
+  --dui-brand-accent-press: #bc6f2f;
+  --dui-brand-accent-text: #875037;
+  --dui-brand-accent-fg: #291806;
+  --dui-brand-accent-bg: #fff1e4;
+  --dui-segmented-surface-1: #f5f5f5;
+  --dui-segmented-surface-2: #ebebeb;
+  --dui-segmented-surface-3: #e0e0e0;
+  --dui-segmented-surface-4: #d1d1d1;
+  --dui-segmented-border-1: #dfdfdf;
+  --dui-segmented-border-2: #c7c7c7;
+  --dui-segmented-border-3: #a3a3a3;
+  --dui-segmented-border-4: #808080;
+  --dui-segmented-foreground-1: #171717;
+  --dui-segmented-foreground-2: #404040;
+  --dui-segmented-foreground-3: #595959;
+  --dui-segmented-foreground-4: #737373;
+  --dui-segmented-highlight-1: #ade0d7;
+  --dui-segmented-highlight-2: #80cdbf;
+  --dui-segmented-highlight-3: #50b7a5;
+  --dui-segmented-highlight-4: #218e7d;
+  --dui-segmented-highlight-fg-1: #111111;
+  --dui-segmented-highlight-fg-2: #111111;
+  --dui-segmented-highlight-fg-3: #111111;
+  --dui-segmented-highlight-fg-4: #111111;
+  --dui-semantic-info: #166f99;
+  --dui-semantic-info-hover: #105d82;
+  --dui-semantic-info-press: #0b4b69;
+  --dui-semantic-info-text: #115b7d;
+  --dui-semantic-info-fg: #eff9fe;
+  --dui-semantic-info-bg: #e7f5fd;
+  --dui-semantic-success: #16694b;
+  --dui-semantic-success-hover: #10583e;
+  --dui-semantic-success-press: #1d4735;
+  --dui-semantic-success-text: #166342;
+  --dui-semantic-success-fg: #effcf6;
+  --dui-semantic-success-bg: #e7f7ef;
+  --dui-semantic-warning: #947100;
+  --dui-semantic-warning-hover: #775b00;
+  --dui-semantic-warning-press: #5b4500;
+  --dui-semantic-warning-text: #745800;
+  --dui-semantic-warning-fg: #fff8e6;
+  --dui-semantic-warning-bg: #fff6d8;
+  --dui-semantic-danger: #b42318;
+  --dui-semantic-danger-hover: #982018;
+  --dui-semantic-danger-press: #781a14;
+  --dui-semantic-danger-text: #a02118;
+  --dui-semantic-danger-fg: #fff5f4;
+  --dui-semantic-danger-bg: #fdeceb;
+  --dui-semantic-invalid: #c03645;
+  --dui-semantic-invalid-hover: #a32b3b;
+  --dui-semantic-invalid-press: #832231;
+  --dui-semantic-invalid-text: #a32b3b;
+  --dui-semantic-invalid-fg: #fff9fb;
+  --dui-semantic-invalid-bg: #fdedef;
+  --dui-utility-muted: #f2f2f2;
+  --dui-utility-muted-fg: #666666;
+  --dui-utility-disabled-bg: #efefef;
+  --dui-utility-disabled-fg: #888888;
+  --dui-utility-disabled-border: #dfdfdf;
+  --dui-utility-placeholder: #737373;
+  --dui-utility-input-border: #949494;
+  --dui-utility-separator: #e5e5e5;
+  --dui-utility-skeleton: #e5e5e5;
+  --dui-component-switch-thumb-off: #ffffff;
+  --dui-component-switch-track-on-default: #404040;
+  --dui-component-switch-thumb-on-default: #fafafa;
+  --dui-component-switch-thumb-on-secondary: #f1f5ec;
+  --dui-component-switch-thumb-on-accent: #fff1e4;
+  --dui-component-switch-track-off-hover: #888888;
+  --dui-component-switch-track-off-press: #737373;
+  --dui-component-switch-track-on-default-hover: #333333;
+  --dui-component-accordion-soft-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 12%,
+    transparent
+  );
+  --dui-component-accordion-soft-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 28%,
+    transparent
+  );
+  --dui-component-accordion-neutral-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 28%,
+    transparent
+  );
+}
+
+[data-theme="dark"] {
+  --dui-basic-background: #0d0d0d;
+  --dui-basic-foreground: #fafafa;
+  --dui-basic-inverse-foreground: #171717;
+  --dui-basic-inverse-surface: #f5f5f5;
+  --dui-basic-link: #7ee2d6;
+  --dui-basic-link-hover: #a9eee4;
+  --dui-basic-link-visited: #c5a4e8;
+  --dui-basic-focus-ring: #f5f5f5;
+  --dui-basic-focus-ring-offset: #0d0d0d;
+  --dui-basic-selection-bg: #183b36;
+  --dui-basic-selection-border: #4bc5b4;
+  --dui-brand-primary: #65d7c8;
+  --dui-brand-primary-hover: #83e2d5;
+  --dui-brand-primary-press: #a4ece2;
+  --dui-brand-primary-text: #8ce5da;
+  --dui-brand-primary-fg: #06211e;
+  --dui-brand-primary-bg: #123a35;
+  --dui-brand-secondary: #b9caa1;
+  --dui-brand-secondary-hover: #cad8b5;
+  --dui-brand-secondary-press: #dae4cf;
+  --dui-brand-secondary-text: #d2dfc0;
+  --dui-brand-secondary-fg: #f7f9f2;
+  --dui-brand-secondary-bg: #293422;
+  --dui-brand-accent: #f5b66b;
+  --dui-brand-accent-hover: #f9c48a;
+  --dui-brand-accent-press: #ffd2a7;
+  --dui-brand-accent-text: #ffd09a;
+  --dui-brand-accent-fg: #fff7ee;
+  --dui-brand-accent-bg: #382716;
+  --dui-segmented-surface-1: #1b1b1b;
+  --dui-segmented-surface-2: #262626;
+  --dui-segmented-surface-3: #333333;
+  --dui-segmented-surface-4: #424242;
+  --dui-segmented-border-1: #383838;
+  --dui-segmented-border-2: #4a4a4a;
+  --dui-segmented-border-3: #626262;
+  --dui-segmented-border-4: #858585;
+  --dui-segmented-foreground-1: #fafafa;
+  --dui-segmented-foreground-2: #dadada;
+  --dui-segmented-foreground-3: #bdbdbd;
+  --dui-segmented-foreground-4: #a3a3a3;
+  --dui-segmented-highlight-1: #1c594f;
+  --dui-segmented-highlight-2: #267568;
+  --dui-segmented-highlight-3: #318d7c;
+  --dui-segmented-highlight-4: #3ba695;
+  --dui-segmented-highlight-fg-1: #ffffff;
+  --dui-segmented-highlight-fg-2: #ffffff;
+  --dui-segmented-highlight-fg-3: #ffffff;
+  --dui-segmented-highlight-fg-4: #ffffff;
+  --dui-semantic-info: #8bcdf2;
+  --dui-semantic-info-hover: #a4d9f8;
+  --dui-semantic-info-press: #c2e6fc;
+  --dui-semantic-info-text: #a5dcfa;
+  --dui-semantic-info-fg: #102a38;
+  --dui-semantic-info-bg: #102a38;
+  --dui-semantic-success: #65dcaa;
+  --dui-semantic-success-hover: #87e7bd;
+  --dui-semantic-success-press: #abf0d1;
+  --dui-semantic-success-text: #8ce8bb;
+  --dui-semantic-success-fg: #08291d;
+  --dui-semantic-success-bg: #103226;
+  --dui-semantic-warning: #f0c55a;
+  --dui-semantic-warning-hover: #f6d47b;
+  --dui-semantic-warning-press: #fae4a8;
+  --dui-semantic-warning-text: #f6d481;
+  --dui-semantic-warning-fg: #322505;
+  --dui-semantic-warning-bg: #362a0d;
+  --dui-semantic-danger: #ff7a72;
+  --dui-semantic-danger-hover: #ff9991;
+  --dui-semantic-danger-press: #ffb8b1;
+  --dui-semantic-danger-text: #ff9e97;
+  --dui-semantic-danger-fg: #3b1715;
+  --dui-semantic-danger-bg: #3b1919;
+  --dui-semantic-invalid: #f28eb8;
+  --dui-semantic-invalid-hover: #f7a7c9;
+  --dui-semantic-invalid-press: #fbc5dd;
+  --dui-semantic-invalid-text: #f8b3d0;
+  --dui-semantic-invalid-fg: #391523;
+  --dui-semantic-invalid-bg: #371824;
+  --dui-utility-muted: #242424;
+  --dui-utility-muted-fg: #b6b6b6;
+  --dui-utility-disabled-bg: #282828;
+  --dui-utility-disabled-fg: #8f8f8f;
+  --dui-utility-disabled-border: #3b3b3b;
+  --dui-utility-placeholder: #9f9f9f;
+  --dui-utility-input-border: #626262;
+  --dui-utility-separator: #303030;
+  --dui-utility-skeleton: #343434;
+  --dui-component-switch-thumb-off: #fafafa;
+  --dui-component-switch-track-on-default: #e0e0e0;
+  --dui-component-switch-thumb-on-default: #1b1b1b;
+  --dui-component-switch-thumb-on-secondary: #20301a;
+  --dui-component-switch-thumb-on-accent: #291806;
+  --dui-component-switch-track-off-hover: #737373;
+  --dui-component-switch-track-off-press: #858585;
+  --dui-component-switch-track-on-default-hover: #ebebeb;
+  --dui-component-accordion-soft-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 12%,
+    transparent
+  );
+  --dui-component-accordion-soft-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-default: color-mix(
+    in srgb,
+    var(--dui-segmented-foreground-1) 28%,
+    transparent
+  );
+  --dui-component-accordion-neutral-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-primary: color-mix(
+    in srgb,
+    var(--dui-brand-primary) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-secondary: color-mix(
+    in srgb,
+    var(--dui-brand-secondary) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-accent: color-mix(
+    in srgb,
+    var(--dui-brand-accent) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-info: color-mix(
+    in srgb,
+    var(--dui-semantic-info) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-success: color-mix(
+    in srgb,
+    var(--dui-semantic-success) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-warn: color-mix(
+    in srgb,
+    var(--dui-semantic-warning) 28%,
+    transparent
+  );
+  --dui-component-accordion-soft-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 12%,
+    transparent
+  );
+  --dui-component-accordion-neutral-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 6%,
+    transparent
+  );
+  --dui-component-accordion-neutral-border-danger: color-mix(
+    in srgb,
+    var(--dui-semantic-danger) 28%,
+    transparent
+  );
+}
+
+@theme inline {
+  --color-dui-basic-background: var(--dui-basic-background);
+  --color-dui-basic-foreground: var(--dui-basic-foreground);
+  --color-dui-basic-inverse-foreground: var(--dui-basic-inverse-foreground);
+  --color-dui-basic-inverse-surface: var(--dui-basic-inverse-surface);
+  --color-dui-basic-link: var(--dui-basic-link);
+  --color-dui-basic-link-hover: var(--dui-basic-link-hover);
+  --color-dui-basic-link-visited: var(--dui-basic-link-visited);
+  --color-dui-basic-focus-ring: var(--dui-basic-focus-ring);
+  --color-dui-basic-focus-ring-offset: var(--dui-basic-focus-ring-offset);
+  --color-dui-basic-selection-bg: var(--dui-basic-selection-bg);
+  --color-dui-basic-selection-border: var(--dui-basic-selection-border);
+  --color-dui-brand-primary: var(--dui-brand-primary);
+  --color-dui-brand-primary-hover: var(--dui-brand-primary-hover);
+  --color-dui-brand-primary-press: var(--dui-brand-primary-press);
+  --color-dui-brand-primary-text: var(--dui-brand-primary-text);
+  --color-dui-brand-primary-fg: var(--dui-brand-primary-fg);
+  --color-dui-brand-primary-bg: var(--dui-brand-primary-bg);
+  --color-dui-brand-secondary: var(--dui-brand-secondary);
+  --color-dui-brand-secondary-hover: var(--dui-brand-secondary-hover);
+  --color-dui-brand-secondary-press: var(--dui-brand-secondary-press);
+  --color-dui-brand-secondary-text: var(--dui-brand-secondary-text);
+  --color-dui-brand-secondary-fg: var(--dui-brand-secondary-fg);
+  --color-dui-brand-secondary-bg: var(--dui-brand-secondary-bg);
+  --color-dui-brand-accent: var(--dui-brand-accent);
+  --color-dui-brand-accent-hover: var(--dui-brand-accent-hover);
+  --color-dui-brand-accent-press: var(--dui-brand-accent-press);
+  --color-dui-brand-accent-text: var(--dui-brand-accent-text);
+  --color-dui-brand-accent-fg: var(--dui-brand-accent-fg);
+  --color-dui-brand-accent-bg: var(--dui-brand-accent-bg);
+  --color-dui-segmented-surface-1: var(--dui-segmented-surface-1);
+  --color-dui-segmented-surface-2: var(--dui-segmented-surface-2);
+  --color-dui-segmented-surface-3: var(--dui-segmented-surface-3);
+  --color-dui-segmented-surface-4: var(--dui-segmented-surface-4);
+  --color-dui-segmented-border-1: var(--dui-segmented-border-1);
+  --color-dui-segmented-border-2: var(--dui-segmented-border-2);
+  --color-dui-segmented-border-3: var(--dui-segmented-border-3);
+  --color-dui-segmented-border-4: var(--dui-segmented-border-4);
+  --color-dui-segmented-foreground-1: var(--dui-segmented-foreground-1);
+  --color-dui-segmented-foreground-2: var(--dui-segmented-foreground-2);
+  --color-dui-segmented-foreground-3: var(--dui-segmented-foreground-3);
+  --color-dui-segmented-foreground-4: var(--dui-segmented-foreground-4);
+  --color-dui-segmented-highlight-1: var(--dui-segmented-highlight-1);
+  --color-dui-segmented-highlight-2: var(--dui-segmented-highlight-2);
+  --color-dui-segmented-highlight-3: var(--dui-segmented-highlight-3);
+  --color-dui-segmented-highlight-4: var(--dui-segmented-highlight-4);
+  --color-dui-segmented-highlight-fg-1: var(--dui-segmented-highlight-fg-1);
+  --color-dui-segmented-highlight-fg-2: var(--dui-segmented-highlight-fg-2);
+  --color-dui-segmented-highlight-fg-3: var(--dui-segmented-highlight-fg-3);
+  --color-dui-segmented-highlight-fg-4: var(--dui-segmented-highlight-fg-4);
+  --color-dui-semantic-info: var(--dui-semantic-info);
+  --color-dui-semantic-info-hover: var(--dui-semantic-info-hover);
+  --color-dui-semantic-info-press: var(--dui-semantic-info-press);
+  --color-dui-semantic-info-text: var(--dui-semantic-info-text);
+  --color-dui-semantic-info-fg: var(--dui-semantic-info-fg);
+  --color-dui-semantic-info-bg: var(--dui-semantic-info-bg);
+  --color-dui-semantic-success: var(--dui-semantic-success);
+  --color-dui-semantic-success-hover: var(--dui-semantic-success-hover);
+  --color-dui-semantic-success-press: var(--dui-semantic-success-press);
+  --color-dui-semantic-success-text: var(--dui-semantic-success-text);
+  --color-dui-semantic-success-fg: var(--dui-semantic-success-fg);
+  --color-dui-semantic-success-bg: var(--dui-semantic-success-bg);
+  --color-dui-semantic-warning: var(--dui-semantic-warning);
+  --color-dui-semantic-warning-hover: var(--dui-semantic-warning-hover);
+  --color-dui-semantic-warning-press: var(--dui-semantic-warning-press);
+  --color-dui-semantic-warning-text: var(--dui-semantic-warning-text);
+  --color-dui-semantic-warning-fg: var(--dui-semantic-warning-fg);
+  --color-dui-semantic-warning-bg: var(--dui-semantic-warning-bg);
+  --color-dui-semantic-danger: var(--dui-semantic-danger);
+  --color-dui-semantic-danger-hover: var(--dui-semantic-danger-hover);
+  --color-dui-semantic-danger-press: var(--dui-semantic-danger-press);
+  --color-dui-semantic-danger-text: var(--dui-semantic-danger-text);
+  --color-dui-semantic-danger-fg: var(--dui-semantic-danger-fg);
+  --color-dui-semantic-danger-bg: var(--dui-semantic-danger-bg);
+  --color-dui-semantic-invalid: var(--dui-semantic-invalid);
+  --color-dui-semantic-invalid-hover: var(--dui-semantic-invalid-hover);
+  --color-dui-semantic-invalid-press: var(--dui-semantic-invalid-press);
+  --color-dui-semantic-invalid-text: var(--dui-semantic-invalid-text);
+  --color-dui-semantic-invalid-fg: var(--dui-semantic-invalid-fg);
+  --color-dui-semantic-invalid-bg: var(--dui-semantic-invalid-bg);
+  --color-dui-utility-muted: var(--dui-utility-muted);
+  --color-dui-utility-muted-fg: var(--dui-utility-muted-fg);
+  --color-dui-utility-disabled-bg: var(--dui-utility-disabled-bg);
+  --color-dui-utility-disabled-fg: var(--dui-utility-disabled-fg);
+  --color-dui-utility-disabled-border: var(--dui-utility-disabled-border);
+  --color-dui-utility-placeholder: var(--dui-utility-placeholder);
+  --color-dui-utility-input-border: var(--dui-utility-input-border);
+  --color-dui-utility-separator: var(--dui-utility-separator);
+  --color-dui-utility-skeleton: var(--dui-utility-skeleton);
+  --color-dui-component-switch-thumb-off: var(--dui-component-switch-thumb-off);
+  --color-dui-component-switch-track-on-default: var(
+    --dui-component-switch-track-on-default
+  );
+  --color-dui-component-switch-thumb-on-default: var(
+    --dui-component-switch-thumb-on-default
+  );
+  --color-dui-component-switch-thumb-on-secondary: var(
+    --dui-component-switch-thumb-on-secondary
+  );
+  --color-dui-component-switch-thumb-on-accent: var(
+    --dui-component-switch-thumb-on-accent
+  );
+  --color-dui-component-switch-track-off-hover: var(
+    --dui-component-switch-track-off-hover
+  );
+  --color-dui-component-switch-track-off-press: var(
+    --dui-component-switch-track-off-press
+  );
+  --color-dui-component-switch-track-on-default-hover: var(
+    --dui-component-switch-track-on-default-hover
+  );
+  --color-dui-component-accordion-soft-primary: var(
+    --dui-component-accordion-soft-primary
+  );
+  --color-dui-component-accordion-soft-default: var(
+    --dui-component-accordion-soft-default
+  );
+  --color-dui-component-accordion-neutral-default: var(
+    --dui-component-accordion-neutral-default
+  );
+  --color-dui-component-accordion-neutral-border-default: var(
+    --dui-component-accordion-neutral-border-default
+  );
+  --color-dui-component-accordion-neutral-primary: var(
+    --dui-component-accordion-neutral-primary
+  );
+  --color-dui-component-accordion-neutral-border-primary: var(
+    --dui-component-accordion-neutral-border-primary
+  );
+  --color-dui-component-accordion-soft-secondary: var(
+    --dui-component-accordion-soft-secondary
+  );
+  --color-dui-component-accordion-neutral-secondary: var(
+    --dui-component-accordion-neutral-secondary
+  );
+  --color-dui-component-accordion-neutral-border-secondary: var(
+    --dui-component-accordion-neutral-border-secondary
+  );
+  --color-dui-component-accordion-soft-accent: var(
+    --dui-component-accordion-soft-accent
+  );
+  --color-dui-component-accordion-neutral-accent: var(
+    --dui-component-accordion-neutral-accent
+  );
+  --color-dui-component-accordion-neutral-border-accent: var(
+    --dui-component-accordion-neutral-border-accent
+  );
+  --color-dui-component-accordion-soft-info: var(
+    --dui-component-accordion-soft-info
+  );
+  --color-dui-component-accordion-neutral-info: var(
+    --dui-component-accordion-neutral-info
+  );
+  --color-dui-component-accordion-neutral-border-info: var(
+    --dui-component-accordion-neutral-border-info
+  );
+  --color-dui-component-accordion-soft-success: var(
+    --dui-component-accordion-soft-success
+  );
+  --color-dui-component-accordion-neutral-success: var(
+    --dui-component-accordion-neutral-success
+  );
+  --color-dui-component-accordion-neutral-border-success: var(
+    --dui-component-accordion-neutral-border-success
+  );
+  --color-dui-component-accordion-soft-warn: var(
+    --dui-component-accordion-soft-warn
+  );
+  --color-dui-component-accordion-neutral-warn: var(
+    --dui-component-accordion-neutral-warn
+  );
+  --color-dui-component-accordion-neutral-border-warn: var(
+    --dui-component-accordion-neutral-border-warn
+  );
+  --color-dui-component-accordion-soft-danger: var(
+    --dui-component-accordion-soft-danger
+  );
+  --color-dui-component-accordion-neutral-danger: var(
+    --dui-component-accordion-neutral-danger
+  );
+  --color-dui-component-accordion-neutral-border-danger: var(
+    --dui-component-accordion-neutral-border-danger
+  );
+  --color-background: var(--dui-basic-background);
+  --color-foreground: var(--dui-basic-foreground);
+  --color-primary: var(--dui-brand-primary);
+  --color-primary-foreground: var(--dui-brand-primary-fg);
+  --color-border: var(--dui-utility-input-border);
+}
